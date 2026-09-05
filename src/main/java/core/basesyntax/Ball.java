@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-enum Colors{
+public enum Colors{
     RED,
     GREEN,
     BLACK,
@@ -28,7 +28,7 @@ public class Ball{
         this.number = number;
     }
     public String toString(){
-        System.out.println(color + String.valueOf(number));
+        //System.out.println(color + String.valueOf(number));
         return color + String.valueOf(number);
     }
 

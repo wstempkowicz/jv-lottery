@@ -12,11 +12,25 @@ enum Colors{
 }
 
 public class Ball{
-    String color;
-    int number;
+    private String color;
+    private int number;
 
+    public String getColor(){
+        return this.color;
+    }
+    public int getNumber(){
+        return this.number;
+    }
+    public void setColor(String color){
+        this.color = color;
+    }
+    public void setNumber(int number){
+        this.number = number;
+    }
     public String toString(){
         System.out.println(color + String.valueOf(number));
         return color + String.valueOf(number);
     }
+
+
 }

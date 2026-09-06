@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public enum Colors{
+public enum Color {
     RED,
     GREEN,
     BLACK,
@@ -11,26 +11,29 @@ public enum Colors{
     PINK
 }
 
-public class Ball{
-    public String color;
-    public int number;
+public class Ball {
+    private String color;
+    private int number;
 
-    public String getColor(){
+    public String getColor() {
         return this.color;
     }
-    public int getNumber(){
+
+    public int getNumber() {
         return this.number;
     }
-    public void setColor(String color){
+
+    public void setColor(String color) {
         this.color = color;
     }
-    public void setNumber(int number){
+
+    public void setNumber(int number) {
         this.number = number;
     }
-    public String toString(){
-        //System.out.println(color + String.valueOf(number));
+
+    public String toString() {
+        // System.out.println(color + String.valueOf(number));
         return color + String.valueOf(number);
     }
-
 
 }

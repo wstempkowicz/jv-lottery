@@ -4,8 +4,9 @@ import java.util.Random;
 
 public class Lottery {
     private static final int MAX_BALL_NUMBER = 101;
-    Random randomNumberSupplier = new Random();
-    public Ball getRandomBall () {
+    private Random randomNumberSupplier = new Random();
+
+    public Ball getRandomBall() {
         int number = randomNumberSupplier.nextInt(MAX_BALL_NUMBER);
         ColorSupplier colorSupplier = new ColorSupplier();
         String color = colorSupplier.getRandomColor();
